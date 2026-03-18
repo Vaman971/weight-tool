@@ -223,4 +223,4 @@ Remove-Item Env:SPHINX_OFFLINE
 
 ## License
 
-Proprietary - Airbus Amber. All rights reserved.
+Released under the [MIT License](LICENSE) · Copyright © 2026 Aman
