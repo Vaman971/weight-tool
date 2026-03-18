@@ -1,0 +1,6 @@
+# Documentation build dependencies
+# Install with: pip install -r docs/requirements.txt
+sphinx>=7,<9
+pydata-sphinx-theme
+sphinx-autodoc-typehints
+sphinx-design
