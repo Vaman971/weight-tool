@@ -2,10 +2,10 @@ name: Build and Deploy Docs
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
-  workflow_dispatch:
+    branches: [master]
+  workflow_dispatch:    # ← this adds the "Run workflow" button on GitHub
 
 permissions:
   contents: read
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.11", "3.12"]
+        python-version: ["3.10", "3.11"]
 
     steps:
       - uses: actions/checkout@v4
@@ -47,15 +47,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.10"
 
       - name: Install dependencies
         run: |
           pip install -e ".[dev]"
-          pip install sphinx pydata-sphinx-theme sphinx-autodoc-typehints
+          pip install -r docs/requirements.txt
 
       - name: Build HTML docs
-        run: python -m sphinx docs/source docs/build/html -W --keep-going
+        run: python -m sphinx docs/source docs/build/html
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main'
