@@ -35,7 +35,7 @@ defined in ``src/validation.py``:
 
 .. code-block:: python
 
-   TOLERANCE_PCT = 5.0   # percent — per the Airbus Amber spec
+   TOLERANCE_PCT = 5.0   # percent — per the spec
 
 Change this constant to tighten or relax the Pass/Fail threshold across
 all structures simultaneously.

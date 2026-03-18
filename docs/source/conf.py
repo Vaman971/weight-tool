@@ -11,9 +11,9 @@ import sys
 sys.path.insert(0, os.path.abspath("../.."))
 
 # -- Project information -----------------------------------------------------
-project = "Airbus Amber - Weight Function Calculator"
-copyright = "2025, Airbus Amber"
-author = "Airbus Amber"
+project = "Weight Function Calculator"
+copyright = "2026, Aman"
+author = "Aman"
 release = "1.0.0"
 
 # -- General configuration ---------------------------------------------------

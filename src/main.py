@@ -169,7 +169,7 @@ def run_pipeline(
 
 def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     """Parse command-line arguments for the pipeline CLI."""
-    parser = argparse.ArgumentParser(description="Airbus Amber weight function pipeline")
+    parser = argparse.ArgumentParser(description="weight function pipeline")
     parser.add_argument(
         "--structure",
         type=str,

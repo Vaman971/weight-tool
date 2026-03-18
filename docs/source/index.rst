@@ -1,4 +1,4 @@
-.. Airbus Amber - Weight Function Calculator documentation master file
+.. Weight Function Calculator documentation master file
 
 Weight Function Calculator
 ==========================
@@ -6,8 +6,8 @@ Weight Function Calculator
 .. raw:: html
 
    <section class="wfc-hero">
-     <p><strong>Airbus Amber</strong> | Weight Function Calculator | v1.0.0</p>
-     <h1>Library-style documentation for the structural weight pipeline.</h1>
+     <p>| Weight Function Calculator | v1.0.0</p>
+     <h1>Documentation for the structural weight pipeline.</h1>
      <p>
        Explore installation, architecture, API reference, and contributor workflows
        through a documentation set that is built directly from the repository with Sphinx.
